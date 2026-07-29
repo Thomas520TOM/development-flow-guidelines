@@ -2,34 +2,57 @@
 
 Open-source guidance for AI-assisted coding work across multiple editors and agents.
 
-<p align="left">
-    <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="GitHub logo" width="36" height="36">
-</p>
-
-[![CI](https://img.shields.io/github/actions/workflow/status/Thomas520TOM/development-flow-guidelines/validate.yml?branch=main&logo=githubactions&label=CI)](https://github.com/Thomas520TOM/development-flow-guidelines/actions/workflows/validate.yml)
-[![Validation](https://img.shields.io/badge/validation-passing-brightgreen)](scripts/validate.py)
-[![License: MIT](https://img.shields.io/badge/license-MIT-blue)](LICENSE)
-[![Platforms](https://img.shields.io/badge/platforms-Codex%20%7C%20Claude%20Code%20%7C%20opencode%20%7C%20Cursor%20%7C%20Copilot-6a5acd)](platforms/)
-
-`development-flow-guidelines` packages a full lifecycle system for code-related tasks: requirements analysis, technical design, skill lookup, testing strategy, code generation, code review, security review, maintenance, evaluation, logging, context recovery, and extensibility.
+<table>
+    <tr>
+        <td width="58%" valign="top">
+            <p><strong>development-flow-guidelines</strong> packages a full lifecycle system for code-related tasks: requirements analysis, technical design, skill lookup, testing strategy, code generation, code review, security review, maintenance, evaluation, logging, context recovery, and extensibility.</p>
+            <p align="left">
+                <a href="https://github.com/Thomas520TOM/development-flow-guidelines" aria-label="GitHub repository">
+                    <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="GitHub logo" width="28" height="28" style="vertical-align: middle; margin-right: 8px;">
+                </a>
+                <a href="https://github.com/Thomas520TOM/development-flow-guidelines/actions/workflows/validate.yml">
+                    <img src="https://img.shields.io/github/actions/workflow/status/Thomas520TOM/development-flow-guidelines/validate.yml?branch=main&logo=githubactions&label=CI" alt="CI status" style="vertical-align: middle; margin-right: 6px;">
+                </a>
+                <a href="scripts/validate.py">
+                    <img src="https://img.shields.io/badge/validation-passing-brightgreen" alt="Validation passing" style="vertical-align: middle; margin-right: 6px;">
+                </a>
+                <a href="LICENSE">
+                    <img src="https://img.shields.io/badge/license-MIT-blue" alt="MIT license" style="vertical-align: middle; margin-right: 6px;">
+                </a>
+                <a href="platforms/">
+                    <img src="https://img.shields.io/badge/platforms-Codex%20%7C%20Claude%20Code%20%7C%20opencode%20%7C%20Cursor%20%7C%20Copilot-6a5acd" alt="Supported platforms" style="vertical-align: middle;">
+                </a>
+            </p>
+            <p><strong>Why It Matters</strong></p>
+            <ul>
+                <li>Enough structure to keep the assistant consistent.</li>
+                <li>Enough modularity to load only what is needed.</li>
+                <li>Enough validation to keep the repository trustworthy.</li>
+            </ul>
+        </td>
+        <td width="42%" valign="top">
+            <img src="assets/development-flow-cover-dark.svg" alt="development-flow-guidelines dark cover" />
+        </td>
+    </tr>
+</table>
 
 ## Highlights
 
-- Multi-platform by design: Codex, Claude Code, opencode, Cursor, and GitHub Copilot all have first-class adapters.
-- Lifecycle aware: work flows from idea to implementation through explicit stages, gates, and validation.
-- Modular and auditable: every module has frontmatter, dependencies, outputs, and gate checks.
-- Release ready: validation covers reference reachability, dependency closure, token budgets, and lifecycle coverage.
-- Template friendly: the repo works as a reusable instruction system, not a one-off prompt dump.
+<table>
+  <tr>
+    <td width="33%" valign="top"><strong>Lifecycle aware</strong><br>Work flows from idea to implementation through explicit stages, gates, and validation.</td>
+    <td width="33%" valign="top"><strong>Multi-platform</strong><br>Codex, Claude Code, opencode, Cursor, and GitHub Copilot all have first-class adapters.</td>
+    <td width="33%" valign="top"><strong>Modular and auditable</strong><br>Every module has frontmatter, dependencies, outputs, and gate checks.</td>
+  </tr>
+</table>
 
-## Why It Exists
-
-Most coding-assistant setups are either too shallow to scale or too rigid to adapt. This project sits in the middle:
-
-- enough structure to keep the assistant consistent
-- enough modularity to load only what is needed
-- enough validation to keep the repository trustworthy
-
-The result is a practical skill system that can be shared, extended, and published like a serious open-source project.
+<table>
+  <tr>
+    <td width="33%" valign="top"><strong>Release ready</strong><br>Validation covers reference reachability, dependency closure, token budgets, and lifecycle coverage.</td>
+    <td width="33%" valign="top"><strong>Template friendly</strong><br>The repo works as a reusable instruction system, not a one-off prompt dump.</td>
+    <td width="33%" valign="top"><strong>Recovery built in</strong><br>Context management, error recovery, and progress tracking are part of the system.</td>
+  </tr>
+</table>
 
 ## What You Get
 

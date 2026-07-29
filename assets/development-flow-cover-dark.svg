@@ -1,0 +1,74 @@
+<svg width="1200" height="900" viewBox="0 0 1200 900" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">development-flow-guidelines dark cover</title>
+  <desc id="desc">A dark themed promotional cover for the development-flow-guidelines repository.</desc>
+  <defs>
+    <linearGradient id="bg" x1="120" y1="48" x2="1088" y2="852" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#040814"/>
+      <stop offset="0.52" stop-color="#0A1528"/>
+      <stop offset="1" stop-color="#111F38"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="198" y1="126" x2="1004" y2="724" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#6EE7FF"/>
+      <stop offset="0.45" stop-color="#8B8DFF"/>
+      <stop offset="1" stop-color="#E58CFF"/>
+    </linearGradient>
+    <linearGradient id="panel" x1="184" y1="204" x2="1036" y2="694" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0A1324"/>
+      <stop offset="1" stop-color="#101D35"/>
+    </linearGradient>
+    <filter id="glow" x="0" y="0" width="1200" height="900" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feGaussianBlur stdDeviation="20"/>
+    </filter>
+  </defs>
+
+  <rect width="1200" height="900" rx="36" fill="url(#bg)"/>
+  <circle cx="210" cy="168" r="126" fill="#6EE7FF" fill-opacity="0.07" filter="url(#glow)"/>
+  <circle cx="1016" cy="660" r="176" fill="#E58CFF" fill-opacity="0.10" filter="url(#glow)"/>
+  <path d="M864 118C944 118 1016 160 1058 230C1100 302 1102 392 1055 456C1008 520 928 552 854 538C780 524 716 468 688 394C660 320 678 234 734 176C777 132 821 118 864 118Z" stroke="url(#accent)" stroke-width="3" stroke-opacity="0.7"/>
+  <path d="M702 418L1040 244" stroke="url(#accent)" stroke-width="2.2" stroke-opacity="0.34"/>
+  <path d="M716 522L1020 418" stroke="url(#accent)" stroke-width="2.2" stroke-opacity="0.22"/>
+  <path d="M730 634L1000 560" stroke="url(#accent)" stroke-width="2.2" stroke-opacity="0.24"/>
+
+  <rect x="126" y="114" width="962" height="672" rx="30" fill="url(#panel)" stroke="#263956"/>
+
+  <rect x="172" y="162" width="124" height="28" rx="14" fill="#0F223F" stroke="#2E4A7A"/>
+  <text x="234" y="181" text-anchor="middle" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="12" fill="#98DDFF" font-weight="700" letter-spacing="1.6">WORKFLOW</text>
+
+  <text x="172" y="258" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="38" fill="#F7FAFF" font-weight="800">development-flow-guidelines</text>
+  <text x="172" y="300" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="17" fill="#C6D6EE">A lifecycle system for AI-assisted coding work across editors, agents, and review gates.</text>
+
+  <g>
+    <rect x="172" y="342" width="178" height="42" rx="21" fill="#0D203B" stroke="#274063"/>
+    <text x="261" y="369" text-anchor="middle" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="13" fill="#E8F3FF" font-weight="700">Stage-aware</text>
+  </g>
+  <g>
+    <rect x="360" y="342" width="174" height="42" rx="21" fill="#0D203B" stroke="#274063"/>
+    <text x="447" y="369" text-anchor="middle" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="13" fill="#E8F3FF" font-weight="700">Validation-first</text>
+  </g>
+  <g>
+    <rect x="544" y="342" width="170" height="42" rx="21" fill="#0D203B" stroke="#274063"/>
+    <text x="629" y="369" text-anchor="middle" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="13" fill="#E8F3FF" font-weight="700">Multi-platform</text>
+  </g>
+
+  <rect x="172" y="430" width="856" height="246" rx="24" fill="#07111F" stroke="#263956"/>
+  <rect x="202" y="464" width="318" height="18" rx="9" fill="#1C3150"/>
+  <rect x="202" y="494" width="274" height="18" rx="9" fill="#1C3150"/>
+  <rect x="202" y="524" width="338" height="18" rx="9" fill="#1C3150"/>
+  <rect x="202" y="570" width="246" height="18" rx="9" fill="#1C3150"/>
+  <rect x="202" y="600" width="198" height="18" rx="9" fill="#1C3150"/>
+
+  <g>
+    <rect x="602" y="458" width="362" height="186" rx="22" fill="#0B172A" stroke="#2C4063"/>
+    <path d="M626 498H940" stroke="#33527D" stroke-width="2" stroke-dasharray="7 8"/>
+    <circle cx="670" cy="498" r="9" fill="#6EE7FF"/>
+    <circle cx="760" cy="498" r="9" fill="#8B8DFF"/>
+    <circle cx="850" cy="498" r="9" fill="#E58CFF"/>
+    <rect x="626" y="540" width="112" height="34" rx="17" fill="#6EE7FF" fill-opacity="0.14" stroke="#6EE7FF" stroke-opacity="0.35"/>
+    <text x="682" y="562" text-anchor="middle" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="12" fill="#CFF6FF" font-weight="700">Discover</text>
+    <rect x="748" y="540" width="104" height="34" rx="17" fill="#8B8DFF" fill-opacity="0.14" stroke="#8B8DFF" stroke-opacity="0.35"/>
+    <text x="800" y="562" text-anchor="middle" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="12" fill="#E6E3FF" font-weight="700">Activate</text>
+    <rect x="862" y="540" width="96" height="34" rx="17" fill="#E58CFF" fill-opacity="0.14" stroke="#E58CFF" stroke-opacity="0.35"/>
+    <text x="910" y="562" text-anchor="middle" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="12" fill="#F5D7FF" font-weight="700">Execute</text>
+    <text x="626" y="618" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="14" fill="#B7C9E4">Discovery, activation, and execution stay cleanly separated.</text>
+  </g>
+</svg>

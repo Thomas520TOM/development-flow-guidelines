@@ -1,0 +1,59 @@
+<svg width="1200" height="360" viewBox="0 0 1200 360" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">development-flow-guidelines</title>
+  <desc id="desc">A hero banner for the development-flow-guidelines repository.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1200" y2="360" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#07111F"/>
+      <stop offset="0.52" stop-color="#0D1C33"/>
+      <stop offset="1" stop-color="#14284A"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="180" y1="56" x2="1060" y2="304" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#6EE7FF"/>
+      <stop offset="0.5" stop-color="#7C8CFF"/>
+      <stop offset="1" stop-color="#B48CFF"/>
+    </linearGradient>
+    <filter id="blur" x="0" y="0" width="1200" height="360" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feGaussianBlur stdDeviation="22"/>
+    </filter>
+  </defs>
+
+  <rect width="1200" height="360" rx="28" fill="url(#bg)"/>
+  <circle cx="132" cy="52" r="78" fill="#6EE7FF" fill-opacity="0.08" filter="url(#blur)"/>
+  <circle cx="1078" cy="286" r="96" fill="#B48CFF" fill-opacity="0.10" filter="url(#blur)"/>
+  <path d="M980 46C1036 44 1088 78 1122 128C1157 181 1155 247 1118 292C1082 336 1021 350 966 340C910 330 860 300 824 252C787 203 787 140 820 92C853 44 920 48 980 46Z" stroke="url(#accent)" stroke-width="2.5" stroke-opacity="0.75"/>
+  <path d="M814 92L1070 270" stroke="url(#accent)" stroke-width="2" stroke-opacity="0.35"/>
+  <path d="M820 246L1106 126" stroke="url(#accent)" stroke-width="2" stroke-opacity="0.25"/>
+
+  <rect x="76" y="62" width="104" height="28" rx="14" fill="#0F223F" stroke="#2E4A7A"/>
+  <text x="128" y="81" text-anchor="middle" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="12" fill="#8FD8FF" font-weight="700" letter-spacing="1.6">OPEN SOURCE</text>
+
+  <text x="76" y="150" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="34" fill="#F8FBFF" font-weight="800">development-flow-guidelines</text>
+  <text x="76" y="186" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="16" fill="#C9D8F2">A modular system for AI-assisted coding work across editors, agents, and workflows.</text>
+
+  <g>
+    <rect x="76" y="226" width="152" height="42" rx="21" fill="#0E203B" stroke="#244063"/>
+    <text x="152" y="252" text-anchor="middle" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="13" fill="#EAF2FF" font-weight="700">Lifecycle aware</text>
+  </g>
+  <g>
+    <rect x="238" y="226" width="170" height="42" rx="21" fill="#0E203B" stroke="#244063"/>
+    <text x="323" y="252" text-anchor="middle" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="13" fill="#EAF2FF" font-weight="700">Multi-platform</text>
+  </g>
+  <g>
+    <rect x="418" y="226" width="166" height="42" rx="21" fill="#0E203B" stroke="#244063"/>
+    <text x="501" y="252" text-anchor="middle" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="13" fill="#EAF2FF" font-weight="700">Validation-first</text>
+  </g>
+
+  <g opacity="0.95">
+    <rect x="760" y="72" width="338" height="216" rx="22" fill="#081427" stroke="#2B4067"/>
+    <rect x="790" y="104" width="278" height="18" rx="9" fill="#183355"/>
+    <rect x="790" y="134" width="226" height="18" rx="9" fill="#183355"/>
+    <rect x="790" y="164" width="252" height="18" rx="9" fill="#183355"/>
+    <rect x="790" y="194" width="168" height="18" rx="9" fill="#183355"/>
+    <rect x="790" y="228" width="94" height="28" rx="14" fill="#6EE7FF" fill-opacity="0.15" stroke="#6EE7FF" stroke-opacity="0.35"/>
+    <text x="837" y="247" text-anchor="middle" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="12" fill="#BFEFFF" font-weight="700">Ready</text>
+    <rect x="894" y="228" width="98" height="28" rx="14" fill="#B48CFF" fill-opacity="0.15" stroke="#B48CFF" stroke-opacity="0.35"/>
+    <text x="943" y="247" text-anchor="middle" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="12" fill="#E6D8FF" font-weight="700">Auditable</text>
+    <rect x="1002" y="228" width="66" height="28" rx="14" fill="#FFB86C" fill-opacity="0.15" stroke="#FFB86C" stroke-opacity="0.35"/>
+    <text x="1035" y="247" text-anchor="middle" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="12" fill="#FFE6C2" font-weight="700">Fast</text>
+  </g>
+</svg>
