@@ -23,7 +23,7 @@ gates:
 
 ## Positioning
 
-The coding-guidelines system is designed to be extended. Users and third-party developers can create custom modules that integrate with the routing system, log system, and inter-module workflow. This document defines the contract for module registration.
+The development-flow-guidelines system is designed to be extended. Users and third-party developers can create custom modules that integrate with the routing system, log system, and inter-module workflow. This document defines the contract for module registration.
 
 ## Module Registration Specification
 

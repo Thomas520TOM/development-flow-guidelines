@@ -4,6 +4,6 @@ interface:
   icon_small: ""
   icon_large: ""
   brand_color: "#2563EB"
-  default_prompt: "Use $coding-guidelines to ensure code style, engineering decisions, and interaction patterns follow personal standards."
+  default_prompt: "Use $development-flow-guidelines to ensure code style, engineering decisions, and interaction patterns follow personal standards."
 policy:
   allow_implicit_invocation: true

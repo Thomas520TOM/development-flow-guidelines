@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""coding-guidelines validation script.
+"""development-flow-guidelines validation script.
 
 Checks:
     1. Frontmatter completeness — all required fields present in every module

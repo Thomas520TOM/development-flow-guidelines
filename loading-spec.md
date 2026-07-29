@@ -8,7 +8,7 @@ category: meta
 
 # Layered Loading Specification
 
-This document defines the concrete loading mechanism that the host platform (Codex, Claude Code, opencode, Cursor, etc.) should implement to load coding-guidelines modules efficiently.
+This document defines the concrete loading mechanism that the host platform (Codex, Claude Code, opencode, Cursor, etc.) should implement to load development-flow-guidelines modules efficiently.
 
 ## Three-Tier Architecture
 

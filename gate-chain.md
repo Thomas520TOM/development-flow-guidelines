@@ -8,7 +8,7 @@ category: meta
 
 # Gate Chain Specification
 
-This document defines the formal dependency graph and verification rules for the coding-guidelines module system. All module contracts in their YAML frontmatter must satisfy the closure rules defined here.
+This document defines the formal dependency graph and verification rules for the development-flow-guidelines module system. All module contracts in their YAML frontmatter must satisfy the closure rules defined here.
 
 ## Module Dependency Graph
 

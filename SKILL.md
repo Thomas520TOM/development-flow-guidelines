@@ -1,5 +1,5 @@
 ---
-name: coding-guidelines
+name: development-flow-guidelines
 description: Coding work guidance. Applicable to any programming/code-related task requests, triggered when users need to scaffold a project from scratch, write new code, modify existing code, or learn technical solutions.
 version: "2.0.0"
 tier: core

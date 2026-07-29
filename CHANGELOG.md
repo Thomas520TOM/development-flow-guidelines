@@ -1,6 +1,6 @@
 # Changelog
 
-All notable changes to coding-guidelines will be documented in this file.
+All notable changes to development-flow-guidelines will be documented in this file.
 
 ## [2.0.0] — 2026-07-26
 

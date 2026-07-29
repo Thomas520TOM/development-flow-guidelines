@@ -1,10 +1,10 @@
-# CLAUDE.md — Project Instructions for coding-guidelines
+# CLAUDE.md — Project Instructions for development-flow-guidelines
 
 When this skill is installed as a project-level Claude Code skill, this file serves as the project instruction reference.
 
 ## Active Skill
 
-The `coding-guidelines` skill is active in this project. It provides full development lifecycle guidance:
+The `development-flow-guidelines` skill is active in this project. It provides full development lifecycle guidance:
 
 - Requirements analysis → Technical design → Skill dictionary → Testing strategy → Code generation → Code review → Security review → Maintenance → Evaluation
 

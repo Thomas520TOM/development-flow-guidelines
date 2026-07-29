@@ -1,4 +1,4 @@
-# coding-guidelines
+# development-flow-guidelines
 
 Open-source, multi-platform guidance for AI-assisted coding work.
 
@@ -6,7 +6,7 @@ This repository packages a complete lifecycle system for code-related tasks: req
 
 ## What This Project Is
 
-`coding-guidelines` is a modular instruction set for coding agents. It provides:
+`development-flow-guidelines` is a modular instruction set for coding agents. It provides:
 
 - a consistent stage model for working from idea to implementation
 - platform adapters for Codex, Claude Code, opencode, Cursor, and GitHub Copilot
@@ -81,22 +81,22 @@ The validator checks:
 Copy the repository into the Codex skills directory:
 
 ```powershell
-Expand-Archive -Path ".\coding-guidelines.zip" -DestinationPath "C:\Users\<username>\.codex\skills\coding-guidelines" -Force
+Expand-Archive -Path ".\development-flow-guidelines.zip" -DestinationPath "C:\Users\<username>\.codex\skills\development-flow-guidelines" -Force
 ```
 
 ### Claude Code
 
 ```bash
-cp -r . ~/.claude/skills/coding-guidelines/
+cp -r . ~/.claude/skills/development-flow-guidelines/
 cp platforms/claude-code/CLAUDE.md <project-root>/CLAUDE.md
 ```
 
 ### opencode
 
 ```bash
-cp platforms/opencode/SKILL.md ~/.config/opencode/skills/coding-guidelines/SKILL.md
-mkdir -p .opencode/skills/coding-guidelines
-cp platforms/opencode/SKILL.md .opencode/skills/coding-guidelines/SKILL.md
+cp platforms/opencode/SKILL.md ~/.config/opencode/skills/development-flow-guidelines/SKILL.md
+mkdir -p .opencode/skills/development-flow-guidelines
+cp platforms/opencode/SKILL.md .opencode/skills/development-flow-guidelines/SKILL.md
 ```
 
 ### Cursor

@@ -1,5 +1,5 @@
 ---
-name: coding-guidelines
+name: development-flow-guidelines
 description: Full development lifecycle guidance covering requirements, design, implementation, testing, code review, security audit, and maintenance. Activates on any programming task — the AI infers your current stage from natural conversation and loads the appropriate rules on demand.
 allowed-tools: ["Bash", "Read", "Write", "Edit", "Glob", "Grep"]
 ---

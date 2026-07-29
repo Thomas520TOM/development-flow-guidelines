@@ -1,5 +1,5 @@
 ---
-name: coding-guidelines
+name: development-flow-guidelines
 version: "2.0.0"
 maturity: stable
 tier: core
@@ -78,8 +78,8 @@ Each matrix includes: ecosystem maturity, learning curve, performance, TypeScrip
 Install as an opencode skill:
 ```
 # Copy to skills directory
-cp -r platforms/opencode/SKILL.md ~/.config/opencode/skills/coding-guidelines/
+cp -r platforms/opencode/SKILL.md ~/.config/opencode/skills/development-flow-guidelines/
 
 # Or as a project skill
-cp -r platforms/opencode/SKILL.md .opencode/skills/coding-guidelines/
+cp -r platforms/opencode/SKILL.md .opencode/skills/development-flow-guidelines/
 ```
