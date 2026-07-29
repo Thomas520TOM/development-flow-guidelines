@@ -2,7 +2,7 @@
 
 Open-source guidance for AI-assisted coding work across multiple editors and agents.
 
-[![CI](https://img.shields.io/github/actions/workflow/status/Thomas520TOM/workspace/validate.yml?branch=main&logo=githubactions&label=CI)](https://github.com/Thomas520TOM/workspace/actions/workflows/validate.yml)
+[![CI](https://img.shields.io/github/actions/workflow/status/Thomas520TOM/development-flow-guidelines/validate.yml?branch=main&logo=githubactions&label=CI)](https://github.com/Thomas520TOM/development-flow-guidelines/actions/workflows/validate.yml)
 [![Validation](https://img.shields.io/badge/validation-passing-brightgreen)](scripts/validate.py)
 [![License: MIT](https://img.shields.io/badge/license-MIT-blue)](LICENSE)
 [![Platforms](https://img.shields.io/badge/platforms-Codex%20%7C%20Claude%20Code%20%7C%20opencode%20%7C%20Cursor%20%7C%20Copilot-6a5acd)](platforms/)
