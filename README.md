@@ -1,47 +1,44 @@
 # development-flow-guidelines
 
-Open-source, multi-platform guidance for AI-assisted coding work.
+Open-source guidance for AI-assisted coding work across multiple editors and agents.
 
-This repository packages a complete lifecycle system for code-related tasks: requirements analysis, technical design, skill lookup, testing strategy, code generation, code review, security review, maintenance, evaluation, logging, context recovery, and extensibility.
+[![CI](https://img.shields.io/github/actions/workflow/status/Thomas520TOM/workspace/validate.yml?branch=main&logo=githubactions&label=CI)](https://github.com/Thomas520TOM/workspace/actions/workflows/validate.yml)
+[![Validation](https://img.shields.io/badge/validation-passing-brightgreen)](scripts/validate.py)
+[![License: MIT](https://img.shields.io/badge/license-MIT-blue)](LICENSE)
+[![Platforms](https://img.shields.io/badge/platforms-Codex%20%7C%20Claude%20Code%20%7C%20opencode%20%7C%20Cursor%20%7C%20Copilot-6a5acd)](platforms/)
 
-## What This Project Is
+`development-flow-guidelines` packages a full lifecycle system for code-related tasks: requirements analysis, technical design, skill lookup, testing strategy, code generation, code review, security review, maintenance, evaluation, logging, context recovery, and extensibility.
 
-`development-flow-guidelines` is a modular instruction set for coding agents. It provides:
+## Highlights
 
-- a consistent stage model for working from idea to implementation
-- platform adapters for Codex, Claude Code, opencode, Cursor, and GitHub Copilot
-- a skill dictionary for common implementation decisions
-- validation rules for module completeness and reference integrity
-- system-wide modules for logging, recovery, progress tracking, and extension hooks
+- Multi-platform by design: Codex, Claude Code, opencode, Cursor, and GitHub Copilot all have first-class adapters.
+- Lifecycle aware: work flows from idea to implementation through explicit stages, gates, and validation.
+- Modular and auditable: every module has frontmatter, dependencies, outputs, and gate checks.
+- Release ready: validation covers reference reachability, dependency closure, token budgets, and lifecycle coverage.
+- Template friendly: the repo works as a reusable instruction system, not a one-off prompt dump.
 
-The repository is designed as a template-style skill system. The core rules are in the top-level markdown files, while platform-specific adapters live under `platforms/`.
+## Why It Exists
 
-## Repository Layout
+Most coding-assistant setups are either too shallow to scale or too rigid to adapt. This project sits in the middle:
 
-| Path | Purpose |
-|------|---------|
-| [SKILL.md](SKILL.md) | Entry point and stage router |
-| [02-skill-dictionary/index.md](02-skill-dictionary/index.md) | Technology selection matrices and implementation guidance |
-| [03-project-setup/](03-project-setup/) | Requirements analysis and technical design |
-| [07-testing-strategy/rules.md](07-testing-strategy/rules.md) | TDD and coverage gate |
-| [08-code-review/rules.md](08-code-review/rules.md) | Structured code review rubric |
-| [09-security-review/rules.md](09-security-review/rules.md) | Security review rubric |
-| [05-log-memory/](05-log-memory/) | Append-only logs and templates |
-| [platforms/](platforms/) | Platform adapters |
-| [scripts/validate.py](scripts/validate.py) | Repository validation script |
-| [AGENTS.md](AGENTS.md) | opencode discovery layer |
+- enough structure to keep the assistant consistent
+- enough modularity to load only what is needed
+- enough validation to keep the repository trustworthy
 
-## Supported Platforms
+The result is a practical skill system that can be shared, extended, and published like a serious open-source project.
 
-| Platform | Adapter | Notes |
-|----------|---------|-------|
-| Codex | `agents/openai.yaml` | Root skill package support |
-| Claude Code | `platforms/claude-code/` | Project-level or user-level install |
-| opencode | `platforms/opencode/` | Uses `AGENTS.md` as discovery |
-| Cursor | `platforms/cursor/rules/` | Always-on and glob-based rule loading |
-| GitHub Copilot | `platforms/github-copilot/instructions.md` | Single-file instructions |
+## What You Get
 
-## Core Flow
+| Area | What It Covers |
+|------|----------------|
+| Stage routing | A single entry point in [SKILL.md](SKILL.md) and a standard development flow |
+| Decision support | A skill dictionary with technology selection matrices |
+| Quality gates | Testing strategy, code review, and security review before work is considered complete |
+| Recovery | Context management, error recovery, and progress tracking |
+| Extensibility | A documented extension interface and hook model |
+| Platform support | Dedicated adapters for the supported coding environments |
+
+## How It Works
 
 ```mermaid
 flowchart LR
@@ -56,6 +53,45 @@ flowchart LR
     E --> I[Maintenance]
 ```
 
+The system separates three layers:
+
+1. Discovery: lightweight metadata for intent detection.
+2. Activation: the full rule set for the active module.
+3. Execution: deeper references, checklists, and platform-specific guidance.
+
+## Supported Platforms
+
+| Platform | Adapter | Notes |
+|----------|---------|-------|
+| Codex | `agents/openai.yaml` | Root skill package support |
+| Claude Code | `platforms/claude-code/` | Project-level or user-level install |
+| opencode | `platforms/opencode/` | Uses `AGENTS.md` as discovery |
+| Cursor | `platforms/cursor/rules/` | Always-on and glob-based rule loading |
+| GitHub Copilot | `platforms/github-copilot/instructions.md` | Single-file instructions |
+
+## Quick Start
+
+If you want to use the repository as a skill package:
+
+```powershell
+Expand-Archive -Path ".\development-flow-guidelines.zip" -DestinationPath "C:\Users\<username>\.codex\skills\development-flow-guidelines" -Force
+```
+
+For Claude Code:
+
+```bash
+cp -r . ~/.claude/skills/development-flow-guidelines/
+cp platforms/claude-code/CLAUDE.md <project-root>/CLAUDE.md
+```
+
+For opencode:
+
+```bash
+cp platforms/opencode/SKILL.md ~/.config/opencode/skills/development-flow-guidelines/SKILL.md
+mkdir -p .opencode/skills/development-flow-guidelines
+cp platforms/opencode/SKILL.md .opencode/skills/development-flow-guidelines/SKILL.md
+```
+
 ## Validation
 
 Run the repository validator before publishing changes:
@@ -64,7 +100,7 @@ Run the repository validator before publishing changes:
 python scripts/validate.py
 ```
 
-The validator checks:
+It checks:
 
 - frontmatter completeness
 - reference reachability
@@ -74,42 +110,20 @@ The validator checks:
 - lifecycle coverage
 - release surface presence
 
-## Installation
+## Repository Map
 
-### Codex
-
-Copy the repository into the Codex skills directory:
-
-```powershell
-Expand-Archive -Path ".\development-flow-guidelines.zip" -DestinationPath "C:\Users\<username>\.codex\skills\development-flow-guidelines" -Force
-```
-
-### Claude Code
-
-```bash
-cp -r . ~/.claude/skills/development-flow-guidelines/
-cp platforms/claude-code/CLAUDE.md <project-root>/CLAUDE.md
-```
-
-### opencode
-
-```bash
-cp platforms/opencode/SKILL.md ~/.config/opencode/skills/development-flow-guidelines/SKILL.md
-mkdir -p .opencode/skills/development-flow-guidelines
-cp platforms/opencode/SKILL.md .opencode/skills/development-flow-guidelines/SKILL.md
-```
-
-### Cursor
-
-```bash
-cp platforms/cursor/rules/*.mdc <project-root>/.cursor/rules/
-```
-
-### GitHub Copilot
-
-```bash
-cp platforms/github-copilot/instructions.md <project-root>/.github/copilot-instructions.md
-```
+| Path | Purpose |
+|------|---------|
+| [SKILL.md](SKILL.md) | Entry point and stage router |
+| [02-skill-dictionary/index.md](02-skill-dictionary/index.md) | Technology selection matrices and implementation guidance |
+| [03-project-setup/](03-project-setup/) | Requirements analysis and technical design |
+| [05-log-memory/](05-log-memory/) | Append-only logs and templates |
+| [07-testing-strategy/rules.md](07-testing-strategy/rules.md) | TDD and coverage gate |
+| [08-code-review/rules.md](08-code-review/rules.md) | Structured code review rubric |
+| [09-security-review/rules.md](09-security-review/rules.md) | Security review rubric |
+| [platforms/](platforms/) | Platform adapters |
+| [scripts/validate.py](scripts/validate.py) | Repository validation script |
+| [AGENTS.md](AGENTS.md) | opencode discovery layer |
 
 ## Contributing
 
@@ -122,7 +136,7 @@ When adding or changing a module:
 
 ## Notes
 
-- The repo intentionally separates discovery, activation, and execution layers.
+- Discovery, activation, and execution are intentionally separate.
 - Dynamic project logs belong in instance directories, not inside the template itself.
 - The `scripts/` folder is reserved for repository automation and validation.
 
