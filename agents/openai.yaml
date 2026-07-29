@@ -1,0 +1,9 @@
+interface:
+  display_name: "Coding Work Guidance"
+  short_description: "Personal coding standards and engineering thinking constraints"
+  icon_small: ""
+  icon_large: ""
+  brand_color: "#2563EB"
+  default_prompt: "Use $coding-guidelines to ensure code style, engineering decisions, and interaction patterns follow personal standards."
+policy:
+  allow_implicit_invocation: true

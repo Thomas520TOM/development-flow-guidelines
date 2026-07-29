@@ -1,0 +1,48 @@
+---
+description: Bug investigation and maintenance — applies when debugging or fixing existing code
+globs: "**/*"
+alwaysApply: false
+---
+
+# Bug Investigation and Maintenance Standards
+
+## Modification Principles
+
+- **Minimal changes**: Do not modify code outside the target scope.
+- **Understand before acting**: Read and understand affected code and context before proposing changes.
+- **Change implementation, not interfaces**: Prefer modifying internal implementation over changing inter-module interfaces unless necessary.
+
+## 6-Layer Bug Investigation
+
+Investigate systematically, one layer at a time:
+
+1. **Surface check**: Obvious typos, variable names, spelling, bracket matching.
+2. **Type check**: Parameter type mismatches, incorrect return value handling.
+3. **Logic check**: Missing branches in conditionals, index out-of-bounds in loops.
+4. **State check**: Implicit state dependencies, inconsistent state across paths.
+5. **Boundary check**: Null values, empty lists, boundary inputs, concurrent scenarios.
+6. **Environment check**: Runtime differences, dependency versions, configuration issues.
+
+## Maintenance Flow
+
+1. **Locate the problem**: Confirm the symptom, trace to root cause. Present diagnosis for user confirmation before modifying.
+2. **Assess impact scope**: Which modules are affected? Which callers need updating?
+3. **Formulate modification plan**: What changes, what stays, how to verify.
+4. **Execute modifications**: One file at a time. Confirm after each. Roll back only the current change if needed.
+5. **Regression testing**: Verify changed functionality AND check unrelated functionality.
+
+## Scenario Coverage
+
+Beyond code-level bugs, test from a functional perspective:
+- Happy path scenarios
+- Invalid input scenarios
+- Interruption scenarios (network loss, refresh, exit)
+- Boundary condition scenarios
+- Permission scenarios
+- State jump scenarios (skipping prerequisite steps)
+
+## Rollback Protection
+
+- Use small commits (confirm after changing one function).
+- Inform user if current code is uncommitted before starting modifications.
+- Specify rollback scope: only the current modification, not unrelated files.

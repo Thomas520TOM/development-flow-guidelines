@@ -1,0 +1,43 @@
+---
+description: Security review — always active for security awareness across all code
+alwaysApply: true
+---
+
+# Security Standards
+
+## Input Validation (Always Apply)
+
+All user input must be validated at the boundary:
+- Type validation: input matches expected type.
+- Length limits: strings and collections have maximum constraints.
+- Format validation: structured fields match expected patterns.
+- Range checks: numeric values have min/max bounds.
+- Whitelist over blacklist: accept known-good patterns.
+
+## Injection Prevention (Always Apply)
+
+- **SQL**: Use parameterized queries or ORM. Never concatenate user input into SQL strings.
+- **XSS**: Escape output in HTML context. Use `textContent` over `innerHTML`. Apply CSP headers.
+- **Command**: Do not pass user input to shell commands. Use argument arrays if unavoidable.
+- **Path Traversal**: Reject `../` sequences. Resolve to canonical path and verify within allowed directory.
+- **SSRF**: Validate and restrict outbound URLs. Block internal IP ranges.
+
+## Authentication and Secrets (Always Apply)
+
+- Passwords: use bcrypt, argon2, or scrypt. Never plain-text or weak hashes (MD5, SHA1).
+- No hardcoded API keys, tokens, or passwords in source code.
+- Use environment variables or secret management for credentials.
+- Session tokens must be cryptographically random and have expiry.
+
+## Authorization (Always Apply)
+
+- Default deny — explicitly grant permissions.
+- Server-side enforcement — not just hidden UI elements.
+- Users access only their own resources unless explicitly granted broader access.
+- Role/permission checks on every request, not just at login.
+
+## Data Protection (Always Apply)
+
+- All communication uses TLS. Redirect HTTP to HTTPS.
+- No passwords, tokens, or PII in log output.
+- Only collect and store data that is necessary.

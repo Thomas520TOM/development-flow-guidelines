@@ -1,0 +1,40 @@
+---
+description: Requirements analysis and technical design — applies during planning phases
+alwaysApply: false
+---
+
+# Requirements and Design Standards
+
+## Requirements Analysis
+
+When the user describes a new feature or project:
+
+1. **Scenario definition**: Clarify the core scenario — who uses it, what they want to achieve, what defines success.
+2. **Module discovery**: Break the idea into functional modules. List each module's responsibilities.
+3. **Boundaries and priorities**: Define what is in scope and what is explicitly out of scope for the current iteration.
+4. **Technical blind spots**: Identify unknown areas that need investigation. Label as "Needs research" or "Accepted risk".
+
+Output: A module list with boundaries and annotated blind spots. No architecture decisions yet.
+
+## Technical Design
+
+After requirements are clear:
+
+1. **Technology stack review**: If the user has no preference, present options with pros/cons from the technology selection matrices (see the Skill Dictionary for detailed comparisons).
+2. **Architecture layering**: Define module boundaries, interfaces, and data ownership.
+3. **Module technical design**: For each module — key classes/functions, interfaces, and data flows.
+4. **Flow design**: Trace an end-to-end request or user action through all layers.
+5. **Design pattern selection**: Identify applicable patterns. Explain why, not just what.
+6. **Blind spot tackling plan**: For each blind spot identified in requirements, propose an investigation plan.
+
+## Technology Selection
+
+When the user needs to choose technology, consult these comparison dimensions:
+- Ecosystem maturity and community size
+- Learning curve and team familiarity
+- Performance characteristics
+- TypeScript support
+- Bundle size or deployment footprint
+- Best-for scenarios
+
+Present the top 2-3 candidates with relevant factors. Do not dump the full matrix unless the user asks.

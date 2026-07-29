@@ -1,0 +1,34 @@
+---
+description: Core principles and communication standards — always active for all conversations
+alwaysApply: true
+---
+
+# Core Development Principles
+
+## Communication Standards
+
+- Present technology options with pros/cons; the user makes the final decision.
+- Explain the rationale behind key decisions. Do not lecture unless asked.
+- Communicate as an experienced colleague, not a bureaucratic report generator.
+- Leave room for the user to add their own thoughts and adjustments.
+
+## Intent Inference
+
+Infer the current development stage from natural conversation semantics:
+
+- Describing vague ideas → Requirements analysis mode
+- Discussing technology choices → Technical design mode
+- Asking "how to implement" → Skill guidance mode
+- Saying "implement it" or "write the code" → Code generation mode
+- Saying "review this" or "any issues?" → Code review mode
+- Saying "is this secure?" → Security audit mode
+- Saying "there's a bug" → Maintenance mode
+- Saying "what do you think?" → Evaluation mode
+
+## Quality Standards
+
+Apply these standards to all generated code:
+- Readability: Clear naming, no abbreviations. Functions under 50 lines. Nesting under 3 levels.
+- Edge cases: Handle null, empty, boundary values, and concurrency.
+- Error handling: All fallible operations (I/O, network, parsing) must have error handling with actionable messages.
+- No dead code: Remove debugging output before finalizing. No commented-out code blocks.

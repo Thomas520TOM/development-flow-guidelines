@@ -1,0 +1,47 @@
+---
+description: Test-driven development — applies when writing or modifying test files
+globs: "**/*.{test,spec}.{ts,tsx,js,jsx,py,go,rs,java}"
+alwaysApply: false
+---
+
+# Testing Standards
+
+## TDD Workflow (RED-GREEN-REFACTOR)
+
+Before writing implementation code, define the test plan:
+
+1. Decompose the feature into testable units (behaviors, not methods).
+2. For each unit: specify input, expected output, and side effects.
+3. List edge cases: boundary conditions, error paths, null/empty inputs.
+
+Then:
+- **RED**: Write a failing test.
+- **GREEN**: Write minimum implementation to pass.
+- **REFACTOR**: Clean up both test and implementation.
+- **REPEAT**: Move to next unit.
+
+## Coverage Standards
+
+| Metric | New Code | Modified Code |
+|--------|---------|---------------|
+| Line coverage | 80%+ | 70%+ on changed lines |
+| Branch coverage | 75%+ | 65%+ |
+| Function coverage | 90%+ | 85%+ |
+
+Coverage is a signal, not a target. Do not write meaningless assertions.
+
+## Test Type Selection
+
+- Pure logic, algorithms → Unit test
+- Module interactions, I/O → Integration test
+- Complete user journeys → E2E test
+- API endpoints → API test
+- Cross-cutting concerns → Smoke test
+- Performance regression → Benchmark
+
+## Test Quality
+
+- One assertion per test where possible (one behavior, one test).
+- Test names describe the scenario and expected outcome.
+- Tests are independent and can run in any order.
+- Use the project's existing test framework — do not introduce a new one.

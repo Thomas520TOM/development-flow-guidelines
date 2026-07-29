@@ -1,0 +1,66 @@
+---
+description: Code review checklist — activated when reviewing pull requests or requesting code review
+globs: "**/*"
+alwaysApply: false
+---
+
+# Code Review Standards
+
+## 6-Dimension Review Framework
+
+Review every change across all six dimensions. Flag issues by severity:
+
+| Severity | Action |
+|----------|--------|
+| Critical | Security vulnerability, data loss, system crash — must fix before merge |
+| High | Logic bug, incorrect behavior, broken contract — fix before merge |
+| Medium | Design smell, readability issue, missing test — fix or file follow-up |
+| Low | Style, naming suggestion, minor optimization — optional |
+
+### 1. Functionality and Correctness
+- Code implements stated requirements completely.
+- Core logic is correct (no off-by-one, inverted conditions, missing branches).
+- Edge cases handled: null/empty, zero/negative, boundary values, concurrency.
+
+### 2. Design and Architecture
+- Single responsibility per function/class/module.
+- Appropriate abstraction level (no over- or under-engineering).
+- No unnecessary duplication (DRY).
+- Loose coupling — changes should not cascade.
+
+### 3. Readability and Maintainability
+- Clear, meaningful names (no `data`, `temp`, `result`).
+- Simplest expression of the functionality.
+- Comments explain "why", not "what".
+- No functions over 50 lines, no nesting over 3 levels.
+
+### 4. Testing and Robustness
+- Tests exist for new/modified behavior.
+- Tests are meaningful (testing behavior, not implementation details).
+- Error handling present for all fallible operations.
+- Error messages are user-friendly and actionable.
+
+### 5. Security
+- User input validated and sanitized.
+- No SQL injection, XSS, command injection, path traversal.
+- No hardcoded secrets.
+- Authorization checks on sensitive operations.
+
+### 6. Performance
+- No database queries inside loops (N+1 problem).
+- No unnecessary full scans or large in-memory collections.
+- No obvious redundant computation or I/O.
+
+## Overall Assessment
+
+- **Approve**: No critical or high issues.
+- **Approve with Comments**: Medium issues only.
+- **Request Changes**: Critical or high issues present.
+
+## Principles
+
+- Review the code, not the author.
+- Be specific with file:line references.
+- Explain why each issue matters.
+- Acknowledge well-designed sections.
+- Do not nitpick style if a linter handles it.
