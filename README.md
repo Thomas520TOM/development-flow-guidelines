@@ -2,6 +2,10 @@
 
 Open-source guidance for AI-assisted coding work across multiple editors and agents.
 
+<p align="left">
+    <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="GitHub logo" width="36" height="36">
+</p>
+
 [![CI](https://img.shields.io/github/actions/workflow/status/Thomas520TOM/development-flow-guidelines/validate.yml?branch=main&logo=githubactions&label=CI)](https://github.com/Thomas520TOM/development-flow-guidelines/actions/workflows/validate.yml)
 [![Validation](https://img.shields.io/badge/validation-passing-brightgreen)](scripts/validate.py)
 [![License: MIT](https://img.shields.io/badge/license-MIT-blue)](LICENSE)

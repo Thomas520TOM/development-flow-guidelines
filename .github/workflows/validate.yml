@@ -19,6 +19,9 @@ jobs:
         with:
           python-version: "3.11"
 
+      - name: Install validation dependency
+        run: python -m pip install pyyaml
+
       - name: Run validation script
         shell: pwsh
         run: python scripts/validate.py
